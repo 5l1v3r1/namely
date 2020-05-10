@@ -20,8 +20,8 @@ github.com/OrielOrielOriel
 github.com/tylerkranig
 
 '''
-
-path = str(pathlib.Path(__file__).parent.absolute()) + '/'  #  Defines path as the parent directory of the script + the character '/'
+#  Defines path as the parent directory of the script + the character '/'
+path = str(pathlib.Path(__file__).parent.absolute()) + '/'  
 
 
 
