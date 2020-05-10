@@ -91,7 +91,6 @@ def parseArguments():
 	parser.add_argument('-df', '--domainfile',
 		metavar='domainfile',
 		type=str,
-		default=path+'domainlist.txt',
 		help='A list of domains'
 	)
 
@@ -171,9 +170,12 @@ def main():
 	parser = parseArguments().parse_args()  #  Launches the parser and gathers arguments from CLI.
 
 
-	#  Raises an exception if neither -n nor -nf CLI arguments are provided.
+	#  Raises an exception if either names or domains are missing from the CLI arguments.
 	if not (parser.name or parser.namefile):
 		raise Exception('No names provided. Use either -n or -nf')
+
+	if not (parser.domain or parser.domainfile):
+		raise Exception('No domains provided. Use either -d or -df')
 
 
 	#  Chooses between a single paramter provided in the CLI or a specified file containing multiple lines of parameters. 
