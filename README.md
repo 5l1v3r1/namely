@@ -37,36 +37,38 @@ optional arguments:
 ## Example Usage
 
 ```
-./namely.py -n hannah montana -d bad-dragon.com
+./namely.py -n hannah montana -d linked.in  
 
-hannah_montana@bad-dragon.com
-montana_hannah@bad-dragon.com
-h_montana@bad-dragon.com
-hannah_m@bad-dragon.com
-han_montana@bad-dragon.com
-m_hannah@bad-dragon.com
-mon_hannah@bad-dragon.com
-hannah.montana@bad-dragon.com
-montana.hannah@bad-dragon.com
-h.montana@bad-dragon.com
-hannah.m@bad-dragon.com
-han.montana@bad-dragon.com
-m.hannah@bad-dragon.com
-mon.hannah@bad-dragon.com
-hannahmontana@bad-dragon.com
-montanahannah@bad-dragon.com
-hmontana@bad-dragon.com
-hannahm@bad-dragon.com
-hanmontana@bad-dragon.com
-mhannah@bad-dragon.com
-monhannah@bad-dragon.com
-hannah-montana@bad-dragon.com
-montana-hannah@bad-dragon.com
-h-montana@bad-dragon.com
-hannah-m@bad-dragon.com
-han-montana@bad-dragon.com
-m-hannah@bad-dragon.com
-mon-hannah@bad-dragon.com
+hannah_montana@linked.in
+montana_hannah@linked.in
+h_montana@linked.in
+hannah_m@linked.in
+han_montana@linked.in
+m_hannah@linked.in
+mon_hannah@linked.in
+hannah.montana@linked.in
+montana.hannah@linked.in
+h.montana@linked.in
+hannah.m@linked.in
+han.montana@linked.in
+m.hannah@linked.in
+mon.hannah@linked.in
+hannahmontana@linked.in
+montanahannah@linked.in
+hmontana@linked.in
+hannahm@linked.in
+hanmontana@linked.in
+mhannah@linked.in
+monhannah@linked.in
+hannah-montana@linked.in
+montana-hannah@linked.in
+h-montana@linked.in
+hannah-m@linked.in
+han-montana@linked.in
+m-hannah@linked.in
+mon-hannah@linked.in
+hannah@linked.in
+montana@linked.in
 ```
 
 ### Custom template provided as a CLI argument: 
@@ -81,13 +83,13 @@ sophie driver
 hugo bear                                                                      
 steven kerb
 
-./namely.py --namefile names.txt -d potato.land -t potato_master_\${first1}-\${last}1998@\${domain} 
+./namely.py --namefile names.txt -d potato.land -t potato_master.\${first1}-\${last}1998@\${domain} 
 
-potato_master_f-smith1998@potato.land                                          
-potato_master_s-coins1998@potato.land                                          
-potato_master_b-taylor1998@potato.land                                         
-potato_master_s-driver1998@potato.land                                         
-potato_master_h-bear1998@potato.land                                           
-potato_master_s-kerb1998@potato.land
+potato_master.f-smith1998@potato.land                                          
+potato_master.s-coins1998@potato.land                                          
+potato_master.b-taylor1998@potato.land                                         
+potato_master.s-driver1998@potato.land                                         
+potato_master.h-bear1998@potato.land                                           
+potato_master.s-kerb1998@potato.land
 ```
 
