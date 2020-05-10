@@ -5,6 +5,7 @@ import itertools
 import re
 import argparse
 import pathlib
+import sys
 
 
 banner = '''
@@ -167,7 +168,15 @@ def writeToFile(email):
 
 def main():
 	global outfile  #  Instantiates outfile as a global variable for use by writeToFile().
-	parser = parseArguments().parse_args()  #  Launches the parser and gathers arguments from CLI.
+	parser = parseArguments()  #  Launches the parser.
+
+
+	#  If no CLI arguments are provided, print the argparse help screen. 
+	if len(sys.argv)==1:
+	    parser.print_help(sys.stderr)
+	    sys.exit(1)
+
+	parser = parser.parse_args()  #  Parses the provided CLI arguments.
 
 
 	#  Raises an exception if either names or domains are missing from the CLI arguments.
