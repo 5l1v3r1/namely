@@ -1,6 +1,6 @@
 # namely
 Creates emails based on a template of patterns. 
-
+'''
 usage: namely.py [-h] [-n name name] [-nf namefile] [-d domain]
                  [-df domainfile] [-t template] [-tf templatefile]
                  [-o outfile]
@@ -26,3 +26,4 @@ optional arguments:
                         A list of templates
   -o outfile, --outfile outfile
                         The file to output to
+'''                        
