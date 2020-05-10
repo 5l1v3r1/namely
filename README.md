@@ -69,4 +69,25 @@ m-hannah@bad-dragon.com
 mon-hannah@bad-dragon.com
 ```
 
+### Custom template provided as a CLI argument: 
+
+```
+cat names.txt
+
+fergus smith                                                                   
+shaun coins                                                                    
+bowie taylor                                                                   
+sophie driver                                                                  
+hugo bear                                                                      
+steven kerb
+
+./namely.py --namefile names.txt -d potato.land -t potato_master_\${first1}-\${last}1998@\${domain} 
+
+potato_master_f-smith1998@potato.land                                          
+potato_master_s-coins1998@potato.land                                          
+potato_master_b-taylor1998@potato.land                                         
+potato_master_s-driver1998@potato.land                                         
+potato_master_h-bear1998@potato.land                                           
+potato_master_s-kerb1998@potato.land
+```
 
