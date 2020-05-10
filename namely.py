@@ -21,8 +21,7 @@ github.com/tylerkranig
 
 '''
 #  Defines path as the parent directory of the script + the character '/'
-path = str(pathlib.Path(__file__).parent.absolute()) + '/'  
-
+PATH = str(pathlib.Path(__file__).parent.absolute()) + '/'
 
 
 def createSubstitutionDictionary(template, first, last, domain):
@@ -50,10 +49,10 @@ def createSubstitutionDictionary(template, first, last, domain):
 			'domain': domain
 	}
 	
-	for result in search:
-		key = str(result[0])+str(result[1])
-		length = int(result[1])
-		name = first if result[0] == 'first' else last
+	for pattern in search:
+		key = ''.join(pattern)
+		length = int(pattern[1])
+		name = first if pattern[0] == 'first' else last
 
 		substitution_dictionary[key] = name[:length]
 
@@ -103,7 +102,7 @@ def parseArguments():
 	parser.add_argument('-tf', '--templatefile',
 		metavar='templatefile',
 		type=str,
-		default=path+'templatelist.txt',
+		default=PATH+'templatelist.txt',
 		help='A list of templates'
 	)	
 
