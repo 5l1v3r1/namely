@@ -26,3 +26,5 @@ ${first}-${last1}@${domain}
 ${first3}-${last}@${domain}
 ${last1}-${first}@${domain}
 ${last3}-${first}@${domain}
+${first}@${domain}
+${last}@${domain}
