@@ -2,12 +2,12 @@
 Namely creates a list of emails based on user inputted names and domains. 
 
 ```
-usage: namely.py [-h] [-n name name] [-nf namefile] [-d domain]                                                                                            
-                 [-df domainfile] [-t template] [-tf templatefile]                                                                                         
-                 [-o outfile]                                                                                                                              
-                                                                                                                                                           
- __  _  __  __ __ ___ _ __   __                                                                                                                            
-|  \| |/  \|  V  | __| |\ `v' /                                                                                                                            
+usage: namely.py [-h] [-n name name] [-nf namefile] [-d domain]
+                 [-df domainfile] [-t template] [-tf templatefile]
+                 [-o outfile] [-k key key]
+
+ __  _  __  __ __ ___ _ __   __
+|  \| |/  \|  V  | __| |\ `v' /
 | | ' | /\ | \_/ | _|| |_`. .' 
 |_|\__|_||_|_| |_|___|___|!_!  
 
@@ -19,19 +19,21 @@ github.com/tylerkranig
 optional arguments:
   -h, --help            show this help message and exit
   -n name name, --name name name
-                        A single name
+                        A single name.
   -nf namefile, --namefile namefile
-                        A list of names
+                        A list of names.
   -d domain, --domain domain
-                        A single domain
+                        A single domain.
   -df domainfile, --domainfile domainfile
-                        A list of domains
+                        A list of domains.
   -t template, --template template
-                        A single template
+                        A single template, has to be the last argument. Don't forget to escape the $ symbols.
   -tf templatefile, --templatefile templatefile
-                        A list of templates
+                        A list of templates.
   -o outfile, --outfile outfile
-                        The file to output to
+                        The file to output to.
+  -k key key, --key key key
+                        Custom key. -k [key] [wordlist]
 ```
 
 ## Example Usage
