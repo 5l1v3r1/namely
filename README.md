@@ -71,6 +71,7 @@ hannah@linked.in
 montana@linked.in
 ```
 
+
 ### Custom template provided as a CLI argument: 
 
 ```
@@ -93,8 +94,33 @@ potato_master.h-bear1998@potato.land
 potato_master.s-kerb1998@potato.land
 ```
 
-## To-Do
+
+### Arbitrary key values and associated wordlists: 
 
 ```
-1. Allow users to specify additional template key values.
+echo Hamster >> animals.txt
+echo Cobra >> animals.txt
+echo Blue >> colors.txt
+echo Orange >> colors.txt
+echo Green >> colors.txt
+
+cat animals.txt
+
+Hamster
+Cobra
+
+cat colors.txt 
+
+Blue
+Orange
+Green
+
+./namely.py -n Lily Raichu -d online.tv -k animal animals.txt -k color colors.txt -t \${first}-\${last}\'s\${color}-\${animal}@\${domain}
+
+Lily-Raichu'sBlue-Hamster@online.tv
+Lily-Raichu'sOrange-Hamster@online.tv
+Lily-Raichu'sGreen-Hamster@online.tv
+Lily-Raichu'sBlue-Cobra@online.tv
+Lily-Raichu'sOrange-Cobra@online.tv
+Lily-Raichu'sGreen-Cobra@online.tv
 ```
