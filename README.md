@@ -1,5 +1,5 @@
 # namely
-Namely creates a list of emails based on user inputted names and domains. 
+Namely is a template-based wordlist generation tool. It is geared towards emails by default, but can be used to generate arbitrary wordlists as well.  
 
 ```
 usage: namely.py [-h] [-n name name] [-nf namefile] [-d domain]
